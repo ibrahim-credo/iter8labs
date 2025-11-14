@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 // Using react-icons instead of heroicons
 import { HiMenu, HiX } from 'react-icons/hi';
-import s3cLogo from '@/images/s3clogo.png'; // Adjust the path to match your file location
+import iter8logo from '@/images/iter8labs.png';
+// Adjust the path to match your file location
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -35,10 +36,10 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3">
               {/* Logo Image */}
-              <div className="relative w-10 h-10 md:w-12 md:h-12">
+              <div className="relative w-10 h-10 md:w-20 md:h-20">
                 <Image
-                  src={s3cLogo}
-                  alt="S3C Logo"
+                  src={iter8logo}
+                  alt="Iter8labs Logo"
                   fill
                   style={{ objectFit: 'contain' }}
                   priority
@@ -46,7 +47,11 @@ const Navbar: React.FC = () => {
                 />
               </div>
               {/* Company Name */}
-              <span className="text-white font-bold text-2xl md:text-3xl">S3C</span>
+              <span className="font-bold text-2xl md:text-3xl">
+                <span style={{ color: '#111E60' }}>ITER</span>
+                <span style={{ color: '#14ABAF' }}>8</span>
+                <span style={{ color: '#111E60' }}>LABS</span>
+              </span>
             </Link>
           </div>
 
@@ -54,6 +59,9 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/products" className="text-gray-300 hover:text-white transition-colors">
               Products
+            </Link>
+            <Link href="/isec" className="text-gray-300 hover:text-white transition-colors">
+              ISEC
             </Link>
             <Link href="/features" className="text-gray-300 hover:text-white transition-colors">
               Features
@@ -72,7 +80,7 @@ const Navbar: React.FC = () => {
               Log in
             </Link>
             <Link href="/signup">
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105">
+              <button className="text-white px-5 py-2 rounded-full font-medium transition-all transform hover:scale-105" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
                 Try for Free
               </button>
             </Link>
@@ -101,6 +109,9 @@ const Navbar: React.FC = () => {
           <Link href="/products" className="block text-gray-300 hover:text-white transition-colors py-2" onClick={closeMenu}>
             Products
           </Link>
+          <Link href="/isec" className="block text-gray-300 hover:text-white transition-colors py-2" onClick={closeMenu}>
+            ISEC
+          </Link>
           <Link href="/features" className="block text-gray-300 hover:text-white transition-colors py-2" onClick={closeMenu}>
             Features
           </Link>
@@ -115,7 +126,7 @@ const Navbar: React.FC = () => {
               Log in
             </Link>
             <Link href="/signup" onClick={closeMenu}>
-              <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full font-medium hover:from-blue-700 hover:to-purple-700 transition-all">
+              <button className="w-full text-white px-4 py-2 rounded-full font-medium transition-all" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
                 Try for Free
               </button>
             </Link>

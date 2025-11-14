@@ -62,8 +62,8 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className="relative pt-24 pb-16 overflow-hidden">
         {/* Background effects */}
-        <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-        <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div className="absolute -top-10 -left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20" style={{ backgroundColor: '#14ABAF' }}></div>
+        <div className="absolute -bottom-10 -right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20" style={{ backgroundColor: '#111E60' }}></div>
         
         <div className="container mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
@@ -74,7 +74,7 @@ const AboutUs = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Empowering Innovation.
-              <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"> Simplifying SaaS.</span>
+              <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}> Simplifying SaaS.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
@@ -227,19 +227,19 @@ const AboutUs = () => {
         <div className="container mx-auto px-6">
           <div className="relative">
             {/* Background glow effects */}
-            <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-            <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+            <div className="absolute -top-10 -left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10" style={{ backgroundColor: '#14ABAF' }}></div>
+            <div className="absolute -bottom-10 -right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10" style={{ backgroundColor: '#111E60' }}></div>
             
             <div className="relative bg-gradient-to-br from-gray-900 to-gray-950 border border-gray-800 rounded-2xl p-8 md:p-12 text-center">
               <div className="max-w-3xl mx-auto">
-                <div className="inline-flex items-center bg-purple-600 bg-opacity-20 border border-purple-500 rounded-full px-4 py-2 mb-6">
-                  <FiTarget className="h-4 w-4 text-purple-400 mr-2" />
-                  <span className="text-purple-400 text-sm font-medium">Our Vision</span>
+                <div className="inline-flex items-center rounded-full px-4 py-2 mb-6 border" style={{ background: 'linear-gradient(to right, rgba(17, 30, 96, 0.2), rgba(20, 171, 175, 0.2))', borderColor: '#14ABAF' }}>
+                  <FiTarget className="h-4 w-4 mr-2" style={{ color: '#14ABAF' }} />
+                  <span className="text-sm font-medium" style={{ color: '#14ABAF' }}>Our Vision</span>
                 </div>
                 
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   The Future of 
-                  <span className="bg-gradient-to-r from-purple-400 to-blue-500 text-transparent bg-clip-text"> SaaS Innovation</span>
+                  <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}> SaaS Innovation</span>
                 </h2>
                 
                 <p className="text-xl text-gray-300 leading-relaxed">
@@ -249,8 +249,8 @@ const AboutUs = () => {
               </div>
               
               {/* Decorative tech elements */}
-              <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-blue-500 to-transparent opacity-20"></div>
-              <div className="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-purple-500 to-transparent opacity-20"></div>
+              <div className="absolute top-0 left-1/4 w-px h-full opacity-20" style={{ background: 'linear-gradient(to bottom, transparent, #14ABAF, transparent)' }}></div>
+              <div className="absolute top-0 right-1/4 w-px h-full opacity-20" style={{ background: 'linear-gradient(to bottom, transparent, #111E60, transparent)' }}></div>
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ const AboutUs = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all">
+            <button className="text-white px-8 py-3 rounded-full text-lg font-medium transition-all" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
               Start Your Free Trial
             </button>
             <button className="bg-transparent border border-gray-500 hover:border-white px-8 py-3 rounded-full text-lg font-medium transition-colors">

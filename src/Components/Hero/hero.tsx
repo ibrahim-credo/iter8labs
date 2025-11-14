@@ -10,12 +10,12 @@ const Hero = () => {
           <div className="lg:w-1/2 lg:pr-12">
             <div className="relative mb-6">
               {/* Animation blobs in background */}
-              <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-              <div className="absolute -bottom-10 right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+              <div className="absolute -top-10 -left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style={{ backgroundColor: '#14ABAF' }}></div>
+              <div className="absolute -bottom-10 right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" style={{ backgroundColor: '#111E60' }}></div>
               
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
                 Your Trusted Platform for 
-                <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"> SaaS Solutions</span>
+                <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}> SaaS Solutions</span>
               </h1>
             </div>
             
@@ -25,7 +25,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href="/signup">
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all">
+                <button className="text-white px-8 py-3 rounded-full text-lg font-medium transition-all" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
                   Try for Free for 40 Days
                 </button>
               </Link>
@@ -65,10 +65,10 @@ const Hero = () => {
               {/* Abstract visualization */}
               <div className="relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-xl p-6 shadow-2xl overflow-hidden">
                 {/* Glowing lines for tech feel */}
-                <div className="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-blue-500 to-transparent opacity-30"></div>
-                <div className="absolute top-0 left-2/3 w-px h-full bg-gradient-to-b from-transparent via-purple-500 to-transparent opacity-30"></div>
-                <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30"></div>
-                <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-30"></div>
+                <div className="absolute top-0 left-1/3 w-px h-full opacity-30" style={{ background: 'linear-gradient(to bottom, transparent, #14ABAF, transparent)' }}></div>
+                <div className="absolute top-0 left-2/3 w-px h-full opacity-30" style={{ background: 'linear-gradient(to bottom, transparent, #111E60, transparent)' }}></div>
+                <div className="absolute top-1/3 left-0 w-full h-px opacity-30" style={{ background: 'linear-gradient(to right, transparent, #14ABAF, transparent)' }}></div>
+                <div className="absolute top-2/3 left-0 w-full h-px opacity-30" style={{ background: 'linear-gradient(to right, transparent, #111E60, transparent)' }}></div>
                 
                 {/* SaaS dashboard preview */}
                 <div className="relative z-10">
@@ -133,7 +133,7 @@ const Hero = () => {
               </div>
               
               {/* Highlighting glow */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 blur-sm rounded-xl"></div>
+              <div className="absolute -inset-0.5 opacity-20 blur-sm rounded-xl" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}></div>
             </div>
           </div>
         </div>

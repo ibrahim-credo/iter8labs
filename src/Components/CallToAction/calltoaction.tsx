@@ -9,8 +9,8 @@ const CallToAction = () => {
       <div className="container mx-auto px-6">
         {/* Background glow effects */}
         <div className="relative">
-          <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-          <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute -top-10 -left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10" style={{ backgroundColor: '#14ABAF' }}></div>
+          <div className="absolute -bottom-10 -right-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10" style={{ backgroundColor: '#111E60' }}></div>
           
           {/* Main content */}
           <div className="relative bg-gradient-to-br from-gray-900 to-gray-950 border border-gray-800 rounded-2xl p-8 md:p-12 overflow-hidden">
@@ -35,7 +35,7 @@ const CallToAction = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4 mb-8">
                   <Link href="/signup">
-                    <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all">
+                    <button className="text-white px-8 py-3 rounded-full text-lg font-medium transition-all" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
                       Start Your Free Trial
                     </button>
                   </Link>
@@ -54,7 +54,7 @@ const CallToAction = () => {
                     "Cancel anytime with no obligations"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center">
-                      <div className="flex-shrink-0 h-5 w-5 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-3">
+                      <div className="flex-shrink-0 h-5 w-5 rounded-full flex items-center justify-center mr-3" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)' }}>
                         <FiCheck className="h-3 w-3 text-white" />
                       </div>
                       <span className="text-gray-300 text-sm">{item}</span>
@@ -68,7 +68,7 @@ const CallToAction = () => {
                 <div className="relative">
                   <div className="w-48 h-48 md:w-56 md:h-56 bg-gray-900 bg-opacity-70 backdrop-blur-sm rounded-full border border-gray-800 flex flex-col items-center justify-center">
                     <div className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Limited Time Offer</div>
-                    <div className="text-4xl font-bold" style={{ background: 'linear-gradient(to right, #3b82f6, #a855f7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                    <div className="text-4xl font-bold" style={{ background: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                       40
                     </div>
                     <div className="text-xl font-medium mb-1">Days</div>
@@ -76,7 +76,7 @@ const CallToAction = () => {
                     
                     {/* Circular progress indicator */}
                     <div className="absolute inset-0 border-4 border-transparent rounded-full p-1">
-                      <div className="w-full h-full rounded-full border-8 border-gray-800 border-t-blue-500 border-r-purple-500 animate-spin" style={{ animationDuration: '10s' }}></div>
+                      <div className="w-full h-full rounded-full border-8 border-gray-800 animate-spin" style={{ borderTopColor: '#14ABAF', borderRightColor: '#111E60', animationDuration: '10s' }}></div>
                     </div>
                   </div>
                 </div>

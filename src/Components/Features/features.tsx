@@ -65,7 +65,7 @@ const Features = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="p-6 bg-black bg-opacity-50 border border-gray-800 rounded-xl">
             <div className="text-4xl font-bold mb-2">
-              <span style={{ backgroundImage: 'linear-gradient(to right, #3b82f6, #60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <span style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 99.9%
               </span>
             </div>
@@ -75,7 +75,7 @@ const Features = () => {
           
           <div className="p-6 bg-black bg-opacity-50 border border-gray-800 rounded-xl">
             <div className="text-4xl font-bold mb-2">
-              <span style={{ backgroundImage: 'linear-gradient(to right, #a855f7, #c084fc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <span style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 10k+
               </span>
             </div>
@@ -85,7 +85,7 @@ const Features = () => {
           
           <div className="p-6 bg-black bg-opacity-50 border border-gray-800 rounded-xl">
             <div className="text-4xl font-bold mb-2">
-              <span style={{ backgroundImage: 'linear-gradient(to right, #10b981, #34d399)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <span style={{ backgroundImage: 'linear-gradient(to right, #111E60, #14ABAF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 24/7
               </span>
             </div>
